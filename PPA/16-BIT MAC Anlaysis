@@ -1,0 +1,24 @@
+# 🧱 Area Utilization – 16-bit MAC
+
+| Utilization Metric           | VEDIC_KS     | WALLACE_KS   | DADDA_KS     | VEDIC_BK     | WALLACE_BK   | DADDA_BK     |
+|-----------------------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| Logic Utilization (ALMs)    | 329 / 56480  | 431 / 56480  | 409 / 56480  | 294 / 56480  | 387 / 56480  | 381 / 56480  |
+| Number of bounded IOBs      | 68           | 68           | 68           | 68           | 68           | 68           |
+| Number of 4-input LUTs      | 168          | 112          | 183          | 146          | 97           | 155          |
+| No. of Slice Registers      | 50           | 53           | 48           | 49           | 55           | 45           |
+
+# 🔋 Power Analysis – 16-bit MAC
+
+| Power Component              | VEDIC_KS | WALLACE_KS | DADDA_KS | VEDIC_BK | WALLACE_BK | DADDA_BK |
+|-----------------------------|----------|-------------|----------|----------|-------------|----------|
+| Core Dynamic Power (mW)     | 3.58     | 3.76        | 2.91     | 3.19     | 2.73        | 2.73     |
+| Core Static Power (mW)      | 349.24   | 349.17      | 349.24   | 349.24   | 349.24      | 349.24   |
+| I/O Thermal Power (mW)      | 16.56    | 16.71       | 17.20    | 17.01    | 17.14       | 17.13    |
+| **Total Thermal Power (mW)**| **369.38** | **369.71** | **369.35** | **369.45** | **369.11** | **369.10** |
+
+# ⏱️ Performance (Delay) – 16-bit MAC
+
+| Delay Type                          | VEDIC_KS | VEDIC_BK | WALLACE_KS | WALLACE_BK | DADDA_KS | DADDA_BK |
+|------------------------------------|----------|----------|-------------|-------------|----------|----------|
+| Internal Delay (no I/O) (ns)       | 4.12     | 4.20     | 4.30        | 4.40        | 3.95     | 4.10     |
+| Delay with I/O = 0.1 ns (ns)       | 26.0     | 21.0     | 22.0        | 23.0        | 23.4     | 21.5     |
