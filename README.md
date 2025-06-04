@@ -24,9 +24,6 @@ The **Kogge-Stone adder** is the **fastest** parallel prefix adder in the family
 - **Log₂(n)** depth → excellent speed
 - **Minimal fanout** → high frequency capability
 - **Extensive wiring and area usage** due to its full binary tree of prefix operations
-
-> ⏩ Best used in **performance-critical designs** where delay is the limiting factor, such as high-speed DSP and compute cores.
-
 ---
 
 ### 🔧 Brent-Kung Adder (BKA)
@@ -35,15 +32,15 @@ The **Brent-Kung adder** is a more **area- and power-efficient** prefix structur
 - **2·log₂(n) - 1** stages → slightly higher delay than KSA
 - **Fewer interconnects** and logic blocks
 - **Balanced trade-off** between performance and silicon footprint
-
-> ✅ Ideal for **low-power, area-constrained** applications, where performance is important but not the only goal.
-
 ---
 
 ### 🔍 Why Use Them in MAC Units?
 
 In MAC architectures, the adder stage often becomes the **critical path**. By selecting a suitable prefix adder:
 - **KSA** accelerates accumulation at the cost of area
-- **BKA** reduces area and power while maintaining reasonable speed
+- **BKA** reduces area and power while maintaining reasonable speed, sometimes act as the fastest too.
 
-In this project, both adders were implemented and compared across 4-, 8-, and 16-bit datapaths to assess how these trade-offs evolve with scale.
+In this project, both adders were implemented and compared across 4-, 8-, and 16-bit datapaths to assess how these trade-offs evolve with scale. 
+We have designed 8-bit,16-bit and 32-bit KSA and BKA for this project and verified it's functionalites
+
+
