@@ -7,3 +7,18 @@
 | Number of 4-input LUTs    | 5              | 12             | 4              | 5              | 12             | 3              |
 | No. of Slice Registers    | 15             | 10             | 8              | 14             | 11             | 14             |
 
+## 🔋 Power Analysis Summary (4-bit MAC)
+
+| Power Component              | WALLACE_KS | VEDIC_KS | DADDA_KS | WALLACE_BK | VEDIC_BK | DADDA_BK |
+|-----------------------------|------------|----------|----------|-------------|----------|----------|
+| Core Dynamic Power (mW)     | 0.00       | 0.36     | 0.51     | 0.65        | 0.36     | 0.67     |
+| Core Static Power (mW)      | 349.16     | 349.18   | 349.18   | 349.19      | 349.18   | 349.19   |
+| I/O Thermal Power (mW)      | 5.95       | 7.84     | 8.57     | 9.88        | 7.82     | 10.02    |
+| **Total Thermal Power (mW)**| **355.12** | **357.38**| **358.26**| **359.72**  | **357.35**| **359.88**|
+
+## ⏱️ Performance (Delay) Analysis - 4-bit MAC
+
+| Delay Type                          | WALLACE_KS | VEDIC_KS | DADDA_KS | WALLACE_BK | VEDIC_BK | DADDA_BK |
+|------------------------------------|------------|----------|----------|-------------|----------|----------|
+| Internal Delay (no I/O constraints)| 2.1 ns     | 2.4 ns   | 2.2 ns   | 2.5 ns      | 2.7 ns   | 2.4 ns   |
+| Delay with I/O = 0.1 ns            | 10.0 ns    | 12.0 ns  | 12.0 ns  | 10.0 ns     | 14.0 ns  | 13.5 ns  |
