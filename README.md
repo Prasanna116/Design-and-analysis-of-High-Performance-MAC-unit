@@ -4,6 +4,8 @@ This project presents the Design, Simulation, Synthesis, and Evaluation of vario
 Adders: **Kogge-Stone (KS)**, **Brent-Kung (BK)** 
 Each MAC variant is implemented for **4-bit, 8-bit, and 16-bit** datapath widths to study scaling behavior.
 
+> 📌 This project presents a complete FPGA-based PPA (Performance, Power, Area) analysis flow for various MAC architectures, implemented and synthesized on the Intel Cyclone V FPGA (Device: **5CEFA7F27C7**).
+
 ## Parallel Prefix Adders
    This project utilizes **Parallel Prefix aAdders (PPAs)** to optimize the accumulation stage of Multiply-Accumulate (MAC) units. PPAs are known for their ability to compute carry bits in parallel, leading to faster addition compared to ripple or carry-lookahead designs.
 
@@ -149,3 +151,16 @@ Due to the repetitive nature of the MAC operation in such applications, optimizi
 
 > VEDIC_BK is best suited for 8-bit MAC designs where resource efficiency is critical, offering a strong balance across PPA metrics.
 
+## 🔍 16-bit MAC: PPA Summary
+
+| Metric        | Best MAC Variant | Notes                                                |
+|---------------|------------------|------------------------------------------------------|
+| Performance   | ✅ VEDIC_BK       | Fastest overall: 21.0 ns delay with I/O              |
+| Power         | ✅ DADDA_BK       | Lowest total thermal power: 369.10 mW               |
+| Area          | ✅ VEDIC_BK       | Lowest ALMs (294), efficient LUT and register usage  |
+| Overall Best  | ✅ VEDIC_BK       | Combines fast delay, lowest area, and competitive power |
+
+> VEDIC_BK offers the best PPA profile for 16-bit MACs, making it optimal for high-throughput and resource-constrained designs.
+> While the Kogge-Stone adder is theoretically faster, the Brent-Kung adder yielded lower overall MAC delay in the 16-bit design, due to better synthesis and routing efficiency in the FPGA.
+
+#THANK YOU
