@@ -127,3 +127,25 @@ It multiplies two input operands (`A` and `B`) and adds the result to a third op
 
 Due to the repetitive nature of the MAC operation in such applications, optimizing its performance, power, and area is critical for efficient system design. In this project, various MAC unit implementations were constructed using different multiplier and adder combinations to evaluate their architectural trade-offs across 4-bit, 8-bit, and 16-bit datapaths.
 
+## 🔍 4-bit MAC: PPA Summary
+
+| Metric        | Best MAC Variant | Notes                                      |
+|---------------|------------------|--------------------------------------------|
+| Performance   | WALLACE_KS       | Fastest delay: 2.1 ns (internal), 10.0 ns (with I/O) |
+| Power         | VEDIC_BK         | Lowest total power: 355.35 mW              |
+| Area          | DADDA_KS         | Fewest slice registers (8), lowest LUT usage |
+| Overall Best  | ✅ VEDIC_BK       | Balanced performance with best power and compact area |
+
+> VEDIC_BK offers the best trade-off across performance, power, and area, making it ideal for efficient 4-bit MAC implementations.
+
+## 🔍 8-bit MAC: PPA Summary
+
+| Metric        | Best MAC Variant | Notes                                                |
+|---------------|------------------|------------------------------------------------------|
+| Performance   | DADDA_KS  or Wallace_KS | Fastest delay: 2.9 ns (internal), 18.0 ns (with I/O) |
+| Power         | VEDIC_KS         | Lowest total power: 355.64 mW                        |
+| Area          | VEDIC_BK         | Lowest ALMs (83), efficient registers and LUTs       |
+| Overall Best  | ✅ VEDIC_BK       | Excellent area efficiency with balanced power & delay |
+
+> VEDIC_BK is best suited for 8-bit MAC designs where resource efficiency is critical, offering a strong balance across PPA metrics.
+
