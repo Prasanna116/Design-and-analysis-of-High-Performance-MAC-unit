@@ -24,8 +24,8 @@ The **Kogge-Stone adder** is the **fastest** parallel prefix adder in the family
 - **Log₂(n)** depth → excellent speed
 - **Minimal fanout** → high frequency capability
 - **Extensive wiring and area usage** due to its full binary tree of prefix operations
-- (![16-bit KSA] (https://github.com/user-attachments/assets/48533408-7c87-40ff-bf33-c8ae77c617e6))
-- (![32-bit KSA] (https://github.com/user-attachments/assets/1ae73345-e778-4325-ab10-56aa50bc6f66))
+- ![16-bit KSA](https://github.com/user-attachments/assets/6d08a814-79d9-4ce7-ae25-578e058f1a12)
+- ![32-bit KSA](https://github.com/user-attachments/assets/4270aa33-a852-4681-bcec-0b318649ca40)
 
 
 ---
@@ -36,6 +36,9 @@ The **Brent-Kung adder** is a more **area- and power-efficient** prefix structur
 - **2·log₂(n) - 1** stages → slightly higher delay than KSA
 - **Fewer interconnects** and logic blocks
 - **Balanced trade-off** between performance and silicon footprint
+- ![16-bit BKA](https://github.com/user-attachments/assets/dd5eb6eb-bb81-4f3f-a238-e918ac688b47)
+- ![32-bit BKA](https://github.com/user-attachments/assets/6a16881a-8047-43af-ae94-c37d46d4f26a)
+
 ---
 
 ### 🔍 Why Use Them in MAC Units?
