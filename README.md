@@ -24,6 +24,7 @@ The **Kogge-Stone adder** is the **fastest** parallel prefix adder in the family
 - **Log₂(n)** depth → excellent speed
 - **Minimal fanout** → high frequency capability
 - **Extensive wiring and area usage** due to its full binary tree of prefix operations
+  
  ![16-bit KSA](https://github.com/user-attachments/assets/6d08a814-79d9-4ce7-ae25-578e058f1a12)
  ![32-bit KSA](https://github.com/user-attachments/assets/4270aa33-a852-4681-bcec-0b318649ca40)
 
@@ -36,8 +37,9 @@ The **Brent-Kung adder** is a more **area- and power-efficient** prefix structur
 - **2·log₂(n) - 1** stages → slightly higher delay than KSA
 - **Fewer interconnects** and logic blocks
 - **Balanced trade-off** between performance and silicon footprint
+  
 ![16-bit BKA](https://github.com/user-attachments/assets/dd5eb6eb-bb81-4f3f-a238-e918ac688b47)
- ![32-bit BKA](https://github.com/user-attachments/assets/6a16881a-8047-43af-ae94-c37d46d4f26a)
+![32-bit BKA](https://github.com/user-attachments/assets/6a16881a-8047-43af-ae94-c37d46d4f26a)
 
 ---
 
@@ -120,6 +122,8 @@ It multiplies two input operands (`A` and `B`) and adds the result to a third op
 - **Neural Network Accelerators**
 - **FIR/IIR Filters**
 - **Matrix and Vector Multiplications**
+
+![MAC Architecture](https://github.com/user-attachments/assets/044fe56b-e4e5-46e9-b8cf-884646206bcf)
 
 Due to the repetitive nature of the MAC operation in such applications, optimizing its performance, power, and area is critical for efficient system design. In this project, various MAC unit implementations were constructed using different multiplier and adder combinations to evaluate their architectural trade-offs across 4-bit, 8-bit, and 16-bit datapaths.
 
