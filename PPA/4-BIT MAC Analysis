@@ -1,0 +1,9 @@
+## 🧱 Area Utilization Summary (4-bit MAC)
+
+| Utilization Metric        | Wallace_KS     | Vedic_KS       | Dadda_KS       | Wallace_BK     | Vedic_BK       | Dadda_BK       |
+|---------------------------|----------------|----------------|----------------|----------------|----------------|----------------|
+| Logic Utilization (ALMs)  | 23 / 56480     | 26 / 56480     | 26 / 56480     | 26 / 56480     | 30 / 56480     | 30 / 56480     |
+| Number of bounded IOBs    | 20             | 20             | 20             | 20             | 20             | 20             |
+| Number of 4-input LUTs    | 5              | 12             | 4              | 5              | 12             | 3              |
+| No. of Slice Registers    | 15             | 10             | 8              | 14             | 11             | 14             |
+
