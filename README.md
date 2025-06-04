@@ -24,6 +24,10 @@ The **Kogge-Stone adder** is the **fastest** parallel prefix adder in the family
 - **Log₂(n)** depth → excellent speed
 - **Minimal fanout** → high frequency capability
 - **Extensive wiring and area usage** due to its full binary tree of prefix operations
+- ![16-bit KSA] (https://github.com/user-attachments/assets/48533408-7c87-40ff-bf33-c8ae77c617e6)
+- ![32-bit KSA] (https://github.com/user-attachments/assets/1ae73345-e778-4325-ab10-56aa50bc6f66)
+
+
 ---
 
 ### 🔧 Brent-Kung Adder (BKA)
